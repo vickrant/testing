@@ -1,0 +1,34 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="m-t-1">
+      <button class="btn btn-primary"  routerLink="/add-user">Add user</button>
+      <button class="btn btn-primary"  routerLink="/edit-user">Edit User</button>
+      <button class="btn btn-primary"  routerLink="/list-user">List User</button>
+      <!-- <button class="btn btn-primary" (click)="doDELETE()">DELETE</button> -->
+    </div>
+  </div>
+</div>
+<!--   
+  <div class="row">
+    <div class="m-t-1">
+      <button class="btn btn-secondary" (click)="doGETAsPromise()">As Promise</button>
+      <button class="btn btn-secondary" (click)="doGETAsPromiseError()">Error as Promise</button>
+      <button class="btn btn-secondary" (click)="doGETAsObservableError()">Error as Observable</button>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="m-t-1">
+      <button class="btn btn-danger" (click)="doGETWithHeaders()">With Headers</button>
+    </div>
+  </div>
+</div>
+
+<ul *ngIf="courses$ | async as courses else noData">
+  <li *ngFor="let course of courses">
+      {{course.description}}
+  </li> 
+</ul>
+<ng-template #noData>No Data Available</ng-template> -->
